@@ -63,13 +63,18 @@ main {
     -ms-transform: translate(150%) translateY(10%);
     -o-transform: translate(150%) translateY(10%);
   }
-  80% {
-    transform: translate(-50%);
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
+  
+  50%, 70%{
+    opacity: 0;
   }
+
+  80% {
+    transform: translate(-150%);
+    -webkit-transform: translate(-150%);
+    -moz-transform: translate(-150%);
+    -ms-transform: translate(-150%);
+    -o-transform: translate(-150%);
+}
   100% {
     transform: translate(0%);
     -webkit-transform: translate(0%);
@@ -148,4 +153,15 @@ main {
         left: 50%;
 
     }
+}
+
+@media screen and (max-width: 768px){
+  .sheep_viwer--sheepIMG {
+    width: 250px;
+    height: 100px;
+  }
+  .animate_sheep_say_no{
+      width: 200px;
+      height: 200px;
+  }
 }

@@ -16,7 +16,6 @@ function KeyBoard() {
 
   function CheckAnswer() {
     const userInp = Number(Inp.current.value); // convert the input value to number
-    console.log(userInp);
     if (userInp === SheepCounter) {
       setIsTheCountCorrect(true);
       setSheepCounter((prevValue) => prevValue + 1);
